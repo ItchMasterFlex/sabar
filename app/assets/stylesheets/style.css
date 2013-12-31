@@ -185,7 +185,7 @@ h4 {
 		border-radius: 2px;
 		text-transform:uppercase;
 		padding:8px 30px 8px 20px !important;
-		background:url('../img/arrows.png') #ff7c6c right center no-repeat ;
+		background:url('arrows.png') #ff7c6c right center no-repeat ;
 		-webkit-transition:0.6s all cubic-bezier(0.1, 0.1, 0.08, 1.9);
 		-moz-transition:0.6s all cubic-bezier(0.1, 0.1, 0.08, 1.9);
 		-o-transition:0.6s all cubic-bezier(0.1, 0.1, 0.08, 1.9);
@@ -198,7 +198,7 @@ h4 {
 		text-decoration:none ;}
 
 .button-preview:hover {
-		background:url('../img/arrows.png') #ff9385 15px center no-repeat ;
+		background:url('arrows.png') #ff9385 15px center no-repeat ;
 		padding:8px 20px 8px 30px !important;
 		cursor:pointer;}
 
@@ -457,7 +457,7 @@ h4 {
 /* 09. NEWSLETTER ================================================== */	
 
 #subscribe {
-		/* background: url('../img/bg2.jpg');/* BACKGROUND OF SUBSCRIBE ANY SIZE EDIT ALSO IN MEDIA QUERIES */ 
+		/* background: url('bg2.jpg');/* BACKGROUND OF SUBSCRIBE ANY SIZE EDIT ALSO IN MEDIA QUERIES */ 
 		background: rgba(42,52,62, 0.9); 
 		background-position:center;
 		background-size: cover;
@@ -484,7 +484,7 @@ h4 {
 		padding: 13px 40px 12px 40px;
 		border-radius: 2px;
 		box-shadow: inset 0px 0px 0px 2px rgba(0,0,0,0.0);
-		background:#FFF url(../img/email.png);
+		background:#FFF url(email.png);
 		background-position:3% 9px;
 		background-repeat:no-repeat;
 		-webkit-transition: all 0.3s ease-in-out;
@@ -622,7 +622,7 @@ h4 {
 
 .contact form input:required,
 .contact form textarea:required{
-		background:#FFF url(../img/invalid.png);
+		background:#FFF url(invalid.png);
 		background-position:98% 6px;
 		background-repeat:no-repeat;
 		box-shadow:inherit;}
@@ -631,7 +631,7 @@ h4 {
 
 .contact form input:required:valid,
 .contact form textarea:required:valid{
-		background:#FFF url(../img/valid.png);
+		background:#FFF url(valid.png);
 		background-position:98% 6px;
 		border:1px solid #BBB;
 		background-repeat:no-repeat;
@@ -641,7 +641,7 @@ h4 {
 
 .contact form input:focus:invalid,
 .contact form textarea:focus:invalid{
-		background:#FFF url(../img/invalid-red.png) no-repeat 98% 6px;
+		background:#FFF url(invalid-red.png) no-repeat 98% 6px;
 		border-color:#ec7e7e;
 		box-shadow:0 0 2px rgba(236,126,126,0.7);}
 		

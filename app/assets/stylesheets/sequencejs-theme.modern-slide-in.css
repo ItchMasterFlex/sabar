@@ -6,7 +6,6 @@
 .sequence-theme {
   /* this container is just to ensure the background color stretches all the way across on bigger screens */
   background: #363F48;
-  /*background: url("../img/bg1.jpg") ; /* BACKGROUND OF THE SLIDER  ANY SIZE  */
   background-position:center;
   background-size: cover;
   -webkit-background-size: cover;
