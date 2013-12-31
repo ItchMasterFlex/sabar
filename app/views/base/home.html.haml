@@ -1,0 +1,123 @@
+<!doctype html>
+/[if lt IE 7] <html class="no-js ie6 oldie" lang="en">
+/[if IE 7] <html class="no-js ie7 oldie" lang="en">
+/[if IE 8] <html class="no-js ie8 oldie" lang="en">
+/[if IE 9] <html class="no-js ie9" lang="en">
+/ [if gt IE 8]><!
+%html.no-js{:itemscope => "", :itemtype => "http://schema.org/Product", :lang => "en"}
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}
+      / Title and meta tag /
+      %title Sabar Dasgupta
+      %meta{:content => "", :name => "description"}/
+      %meta{:content => "", :name => "keywords"}/
+      %meta{:content => "humans.txt", :name => "author"}
+        / Favicon /
+        %link{:href => "favicon.png", :rel => "shortcut icon", :type => "image/x-icon"}/
+        / Facebook Metadata /
+        %meta{:content => "", :property => "fb:page_id"}/
+        %meta{:content => "", :property => "og:image"}/
+        %meta{:content => "", :property => "og:description"}/
+        %meta{:content => "", :property => "og:title"}/
+        / Google+ Metadata /
+        %meta{:content => "", :itemprop => "name"}
+          %meta{:content => "", :itemprop => "description"}
+            %meta{:content => "", :itemprop => "image"}
+              %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}
+                / Stylesheets /
+  = stylesheet_link_tag "base", media: "all"
+  = stylesheet_link_tag "sequencejs-theme.modern-slide-in", media: "all"
+  /[if IE 6]
+    = javascript_include_tag "libs/modernizr-2.6.2.min"
+
+  %body
+    / SLIDER ###############################################
+    %section#header
+      .sequence-theme
+        #sequence
+          %ul.sequence-canvas
+            / SEQUENCE 1
+            %li.animate-in
+              %h2.title A Beautiful Clean Template
+              %h3.subtitle The Mountainhead One Page Template is a beautiful, minimal and easy to edit template. This Template Would be perfect for  Creative Agency or a Landing Page.
+              %img.model{:alt => "Exemple 1", :src => "img/model1.png"}
+    / END SLIDER ###############################################
+    / SECTION OUR METHOD ###############################################
+    %section#method
+      / TITLE
+      .row.top-tittle
+        .twelve.columns.centered
+          %h2 Our Method
+          %p.lead Little things that make all the diference
+      / ROW
+      .row
+        .four.columns
+          %img{:alt => "Exemple", "data-original" => "img/brain.jpg", :src => "img/brain.jpg"}
+            %p Bacon ipsum dolor sit amet ribeye ham kielbasa, pork ball tip jowl pancetta kevin andouille capicola pastrami frankfurter short ribs tenderloin pork chop.
+        .four.columns
+          %img{:alt => "Exemple", "data-original" => "img/build.jpg", :src => "img/build.jpg"}
+            %p Bacon ipsum dolor sit amet ribeye ham kielbasa, pork ball tip jowl pancetta kevin andouille capicola pastrami frankfurter short ribs tenderloin pork chop.
+        .four.columns
+          %img{:alt => "Exemple", "data-original" => "img/love.jpg", :src => "img/love.jpg"}
+            %p Bacon ipsum dolor sit amet ribeye ham kielbasa, pork ball tip jowl pancetta kevin andouille capicola pastrami frankfurter short ribs tenderloin pork chop.
+    / END SECTION OUR METHOD ###############################################
+    / SECTION PROJECTS ###############################################
+    %section#projects
+      / TITLE
+      .row.top-tittle
+        .twelve.columns.centered
+          %h2 Projects
+          %p.lead Awesome and older works that we build
+      / ROW
+      #projects_grid.row
+        / DATA FILER
+        %ul.items.three_up.tiles.centered
+          / PROJECTS 1
+          %li.item.print
+            %a.lightbox{:href => "img/other/2bigf69e.png?lightbox[width]=50p&amp;lightbox[height]=50p"}
+              %img{:alt => "", "data-original" => "img/other/2big.png", :src => "img/other/2big.png"}/
+              %div
+                %h5
+                  DAMNED
+                  %span Lorem Ipsum
+          / PROJECTS 2
+          %li.item.print
+            %a.lightbox{:href => "img/other/4bigf69e.png?lightbox[width]=50p&amp;lightbox[height]=50p"}
+              %img{:alt => "", "data-original" => "img/other/4big.png", :src => "img/other/4big.png"}/
+              %div
+                %h5
+                  MOUNTAIN
+                  %span 2012
+          / PROJECTS 3
+          %li.item.webdesign
+            %a.lightbox{:href => "img/other/1bigf69e.png?lightbox[width]=50p&amp;lightbox[height]=50p"}
+              %img{:alt => "", "data-original" => "img/other/1big.png", :src => "img/other/1big.png"}/
+              %div
+                %h5
+                  i-Risk
+                  %span Webdesign, Identity
+    / END SECTION PROJECTS ###############################################
+    %section#copyright{:style => "background-color:rgb(54,63,72); color:white; letter-spacing:0.5px "}
+      / COPYRIGHT LINE
+      .row
+        .twelve.columns.centered
+          %p Copyright © 2013 Sabar Dasgupta.
+    / END FOOTER ###############################################
+    / Grab Google CDN's jQuery, fall back to local if offline
+    %script{:src => "../../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    :javascript
+      window.jQuery || document.write('<\/script>')
+      
+        
+         <!- Main JS File -!>
+         <!-LazyLoad for img -!>
+         <!- Portfolio Hover Effect -!>
+        
+        
+        
+        
+          window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+          Modernizr.load({
+            load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+          });
