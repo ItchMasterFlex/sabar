@@ -1,0 +1,90 @@
+%head
+  / Stylesheets /
+  = stylesheet_link_tag("gumby")
+  = stylesheet_link_tag("style")
+  = stylesheet_link_tag("sequencejs-theme.modern-slide-in.css")
+  = javascript_include_tag("libs/modernizr-2.6.2.min")
+%body
+  / SLIDER ###############################################
+  %section#header
+    .sequence-theme
+      #sequence
+        %ul.sequence-canvas
+          / SEQUENCE 1
+          %li.animate-in
+            %h2.title Sabar Dasgupta
+            %h3.subtitle
+              I'm a teen entrepreneur, developer, and tinkerer.
+              %br/
+              %a{href: "resume.pdf", style: "font-size:14px; letter-spacing:0.5px"} download resume
+              %p{style: "display:inline; font-weight:bold; font-size:14px"} ·
+              %a{href: "mailto:sabar@chesscademy.com", style: "font-size:14px; letter-spacing:0.5px"} email me
+            = image_tag("model1.png", :class => "model")             
+
+  / END SLIDER ###############################################
+  / SECTION PROJECTS ###############################################
+  %section#projects
+    / TITLE
+    .row
+      .twelve.columns.left
+        %h2{style: "font-size:24px; "}
+          Projects
+    / ROW
+    #projects_grid.row
+      / DATA FILER
+      %ul.items.three_up.tiles.centered
+        / PROJECTS 1
+        %li.item.print
+          %a.lightbox{href: "http://chesscademy.com"}
+            = image_tag("other/2big.png")
+            %div
+              %h5
+                Chesscademy
+                %span A fun and free way to learn chess
+        / PROJECTS 2
+        %li.item.print
+          %a.lightbox{href: "http://hackmit.challengepost.com/submissions/18109-silkspeak"}
+            = image_tag("other/4big.png")
+            %div
+              %h5
+                Silkspeak
+                %span Learn to speak like a champion
+        / PROJECTS 3
+        %li.item.webdesign
+          %a.lightbox{href: "https://www.hackerleague.org/hackathons/hackprinceton-fall-2013/hacks/artemis"}
+            = image_tag("other/1big.png")
+            %div
+              %h5
+                Artemis 
+                %span Your personal health monitor
+  .row.social
+    .twelve.columns.centered
+      %a{href: "https://twitter.com/ItchMasterFlex", target: "_blank"}
+        %i.icon-twitter
+      %a{href: "https://github.com/sabard", target: "_blank"}
+        %i.icon-github
+      %a{href: "http://www.linkedin.com/in/sabar", target: "_blank"}
+        %i.icon-linkedin
+  / END SECTION PROJECTS ###############################################
+  %section#copyright{style: "background-color:rgb(54,63,72); color:white; letter-spacing:0.5px "}
+    / COPYRIGHT LINE
+    .row
+      .twelve.columns.centered
+        %p Copyright © 2013 Sabar Dasgupta.
+  / END FOOTER ###############################################
+  / JAVASCRIPTS
+  = javascript_include_tag("main")
+  / Main JS File
+  = javascript_include_tag("jquery.lazyload.js")
+  / LazyLoad for img
+  = javascript_include_tag("jquery.hoverdir.min.js")
+  / Portfolio Hover Effect
+  / Change UA-XXXXX-X to be your site's ID
+  :javascript
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  /[if lt IE 7 ]
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>

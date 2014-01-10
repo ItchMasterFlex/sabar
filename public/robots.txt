@@ -1,0 +1,3 @@
+# Sabar's Website
+User-agent: *
+Allow: /
