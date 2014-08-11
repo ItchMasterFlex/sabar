@@ -4,6 +4,7 @@
   = stylesheet_link_tag("style")
   = stylesheet_link_tag("sequencejs-theme.modern-slide-in.css")
   = javascript_include_tag("libs/modernizr-2.6.2.min")
+
 %body
   / SLIDER ###############################################
   %section#header
@@ -14,11 +15,11 @@
           %li.animate-in
             %h2.title Sabar Dasgupta
             %h3.subtitle
-              I'm a teen entrepreneur, developer, and tinkerer.
+              Developer and Entrepreneur
               %br/
-              %a{href: "resume.pdf", style: "font-size:14px; letter-spacing:0.5px"} download resume
+              %a{href: "resume.pdf", style: "font-size:14px; letter-spacing:0.5px"} resume
               %p{style: "display:inline; font-weight:bold; font-size:14px"} ·
-              %a{href: "mailto:sabar@chesscademy.com", style: "font-size:14px; letter-spacing:0.5px"} email me
+              %a{href: "mailto:sabar@chesscademy.com", style: "font-size:14px; letter-spacing:0.5px"} email
             = image_tag("model1.png", :class => "model")             
 
   / END SLIDER ###############################################
@@ -59,7 +60,7 @@
                 %span Your personal health monitor
   .row.social
     .twelve.columns.centered
-      %a{href: "https://twitter.com/ItchMasterFlex", target: "_blank"}
+      %a{href: "https://twitter.com/sabardasgupta", target: "_blank"}
         %i.icon-twitter
       %a{href: "https://github.com/sabard", target: "_blank"}
         %i.icon-github
@@ -67,10 +68,7 @@
         %i.icon-linkedin
   / END SECTION PROJECTS ###############################################
   %section#copyright{style: "background-color:rgb(54,63,72); color:white; letter-spacing:0.5px "}
-    / COPYRIGHT LINE
-    .row
-      .twelve.columns.centered
-        %p Copyright © 2013 Sabar Dasgupta.
+
   / END FOOTER ###############################################
   / JAVASCRIPTS
   = javascript_include_tag("main")
