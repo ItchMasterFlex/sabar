@@ -20,44 +20,45 @@
               %a{href: "resume.pdf", style: "font-size:14px; letter-spacing:0.5px"} resume
               %p{style: "display:inline; font-weight:bold; font-size:14px"} ·
               %a{href: "mailto:sabar@chesscademy.com", style: "font-size:14px; letter-spacing:0.5px"} email
-            = image_tag("model1.png", :class => "model")             
+            = image_tag("model1.png", :class => "model")
 
   / END SLIDER ###############################################
   / SECTION PROJECTS ###############################################
   %section#projects
     / TITLE
-    .row
-      .twelve.columns.left
-        %h2{style: "font-size:24px; "}
-          Projects
+    /
+      .row
+        .twelve.columns.left
+          %h2{style: "font-size:24px; "}
+            Projects
     / ROW
     #projects_grid.row
       / DATA FILER
       %ul.items.three_up.tiles.centered
         / PROJECTS 1
         %li.item.print
+          %a.lightbox{href: "http://challengepost.com/sabard"}
+            = image_tag("projects/1.png")
+            %div
+              %h5
+                Hackathons
+                %span 11 winning hacks at prestigious events
+        / PROJECTS 2
+        %li.item.print
           %a.lightbox{href: "http://chesscademy.com"}
-            = image_tag("other/2big.png")
+            = image_tag("projects/2.png")
             %div
               %h5
                 Chesscademy
                 %span A fun and free way to learn chess
-        / PROJECTS 2
-        %li.item.print
-          %a.lightbox{href: "http://hackmit.challengepost.com/submissions/18109-silkspeak"}
-            = image_tag("other/4big.png")
-            %div
-              %h5
-                Silkspeak
-                %span Learn to speak like a champion
         / PROJECTS 3
         %li.item.webdesign
-          %a.lightbox{href: "https://www.hackerleague.org/hackathons/hackprinceton-fall-2013/hacks/artemis"}
-            = image_tag("other/1big.png")
+          %a.lightbox{href: "https://angel.co/orchive"}
+            = image_tag("projects/3.png")
             %div
               %h5
-                Artemis 
-                %span Your personal health monitor
+                Orchive
+                %span Crowdsourced Journalism
   .row.social
     .twelve.columns.centered
       %a{href: "https://twitter.com/sabardasgupta", target: "_blank"}
