@@ -7,10 +7,6 @@ ruby "2.1.5"
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 
-# js runtimes
-gem 'execjs'
-gem 'therubyracer'
-
 #faster than webrick
 gem 'thin'
 
@@ -46,6 +42,7 @@ group :production do
 end
 
 gem 'haml'
+gem 'newrelic_rpm'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
